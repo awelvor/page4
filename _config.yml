@@ -1,3 +1,6 @@
+baseurl: "/page4"
+url: "page4"
+
 collections:
   authors:
     output: true
