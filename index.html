@@ -9,6 +9,6 @@ title: Home
 
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px;">
   {% for myimage in image_files %}
-   myimage.path<br>
+   {{ myimage.path }}<br>
   {% endfor %}
 </div>
