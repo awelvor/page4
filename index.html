@@ -5,7 +5,7 @@ title: Home
 
 <p>index.html</</p>
 
-{% assign image_files = site.static_files | where: "image", true  %}
+{% assign image_files = site.static_files  %}
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px;">
   {% for myimage in image_files %}
     <div class="image-container">
