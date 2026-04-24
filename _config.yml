@@ -1,12 +1,12 @@
-baseurl: "page4"
-url: "https://awelvor.github.io/page4/"
+baseurl: "/page4"
+url: "page4/"
 
 collections:
   authors:
     output: true
 defaults:
   - scope:
-      path: "assets"
+      path: "assets/images"
     values:
       image: true
   - scope:
