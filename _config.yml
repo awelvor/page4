@@ -6,7 +6,7 @@ collections:
     output: true
 defaults:
   - scope:
-      path: ""
+      path: "assets"
     values:
       image: true
   - scope:
