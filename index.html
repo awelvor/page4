@@ -9,11 +9,11 @@ title: Home
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px;">
   {% for myimage in image_files %}
   {% assign theslice = myimage.basename | slice: 0,4 %}
-   {% if theslice == "2025"   %}
+   {% if theslice == "2026"   %}
     <div class="image-container">
       <img src="{{ myimage.path | relative_url }}" alt="Image" style="max-width: 200px; height: auto;">
       <p style="font-size: 12px;">{{ myimage.path }}</p>
-       <p style="font-size: 12px;">{{ myimage.basename | slice: 4,4}}</p>
+       <p style="font-size: 12px;">{{ myimage.basename | slice: 0,4}}</p>
     </div>
    {% endif %}
   {% endfor %}
