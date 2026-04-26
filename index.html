@@ -9,7 +9,7 @@ title: Home
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px;">
   {% for myimage in image_files %}
   {% assign theslice = myimage.basename | slice: 4,4 %}
-   {% if theslice == "2026"   %}
+   {% if theslice == "2025"   %}
     <div class="image-container">
       <img src="{{ myimage.path | relative_url }}" alt="Image" style="max-width: 200px; height: auto;">
       <p style="font-size: 12px;">{{ myimage.path }}</p>
