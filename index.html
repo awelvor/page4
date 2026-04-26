@@ -8,12 +8,12 @@ title: Home
 {% assign image_files = site.static_files  %}
 <div class="gallery" style="display: flex; flex-wrap: wrap; gap: 20px;">
   {% for myimage in image_files %}
-  {% assign theslice = myimage.basename | slice: 0,4 %}
-   {% if theslice == "2026"   %}
+  {% assign theslice = myimage.basename | slice: 0,6 %}
+   {% if theslice == "202604"   %}
     <div class="image-container">
       <img src="{{ myimage.path | relative_url }}" alt="Image" style="max-width: 200px; height: auto;">
       <p style="font-size: 12px;">{{ myimage.path }}</p>
-       <p style="font-size: 12px;">{{ myimage.basename | slice: 0,4}}</p>
+       <p style="font-size: 12px;">{{ myimage.basename }}</p>
     </div>
    {% endif %}
   {% endfor %}
